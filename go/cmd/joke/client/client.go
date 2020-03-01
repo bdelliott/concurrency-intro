@@ -12,6 +12,8 @@ func main() {
 
 	fmt.Println("I've got jokes:")
 	for _, joke := range jokes {
+		fmt.Println("Joke: ")
 		fmt.Println(joke.Joke)
+		fmt.Println("-------------------")
 	}
 }

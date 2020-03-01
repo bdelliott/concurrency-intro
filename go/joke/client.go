@@ -19,7 +19,7 @@ const proxyUrl = "http://localhost:9000"
 
 func Fetch() []Joke {
 	numWorkers := runtime.NumCPU()
-	fmt.Printf("Splitting work across %d CPUs.\n", numWorkers)
+	fmt.Printf("Splitting work across %d workers.\n", numWorkers)
 
 	jokes := make([]Joke, numWorkers)
 	c := make(chan Joke)
